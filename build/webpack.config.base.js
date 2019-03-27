@@ -25,13 +25,13 @@ module.exports = {
   },
   module: {
     rules: [
-      // {
-      //   enforce: 'pre',
-      //   test: /\.(vue|js)$/,
-      //   loader: 'eslint-loader',
-      //   include: path.resolve(__dirname, '../src'),
-      //   exclude: /node_modules/
-      // },
+      {
+        enforce: 'pre',
+        test: /\.(vue|js)$/,
+        loader: 'eslint-loader',
+        include: path.resolve(__dirname, '../src'),
+        exclude: /node_modules/
+      },
       {
         test: /\.js$/,
         loader: 'babel-loader',
@@ -50,6 +50,10 @@ module.exports = {
       {
         test: /\.styl(us)?$/,
         loader: 'style-loader!css-loader!stylus-loader'
+      },
+      {
+        test: /\.css?$/,
+        loader: 'style-loader!css-loader'
       },
       {
         test: /\.(png|jpg|jpeg|gif|eot|ttf|woff|woff2|svg|svgz)(\?.*)?$/,
