@@ -1,8 +1,8 @@
 module.exports = {
-  key: 'vuepress',
-  title: 'Express NodeJS application server boilerplate with VueJS',
+  key: 'app-components',
+  title: 'app-components',
   route: {
-    prefix: '/vuepress',
-    port: 8001,
+    prefix: '',
+    port: 8680,
   }
 }

@@ -25,6 +25,8 @@
   },
   "homepage": "https://github.com/WalleWawo/vuepress#readme",
   "dependencies": {
+    "gapper-app-base": "file:../gapper-app-base",
+    "gapper-element-ui": "git+https://bitbucket.org/genee/gapper-element-ui.git",
     "vue": "^2.5.21",
     "vue-class-component": "^7.0.1",
     "vue-router": "^3.0.2",
